@@ -22,9 +22,9 @@ d3.json("data/data.json").then((incomingData) => {
 
   // Create your trace.
   var trace = {
-    x: titles,
-    y: ratings,
-    type: "bar"
+    labels: titles,
+    values: ratings,
+    type: "pie"
   };
 
   // Create the data array for our plot
